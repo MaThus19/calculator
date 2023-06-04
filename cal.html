@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="cal.css">
+    <title>M-calculator</title>
+</head>
+<body>
+    <form NAME="myForm">
+    <div id="container" >
+        <div id="calculator" >
+          <div id="output">
+            <div id="output" >
+              <INPUT TYPE="text" ID="ans" NAME="screen" style="width: 99%"><br>
+            </div>
+          </div>
+          <div>
+            <div id="keyboard">
+              <INPUT TYPE="button" class="number" NAME="7" VALUE="  7  " onclick="update(7)">
+              <INPUT TYPE="button" class="number" NAME="8" VALUE="  8  " onclick="update(8)">
+              <INPUT TYPE="button" class="number" NAME="9" VALUE="  9  " onclick="update(9)">
+              <INPUT TYPE="button" class="operator" NAME="+" VALUE="  +  " onclick="update('+')">
+              <!-- <br> -->
+              <INPUT TYPE="button" class="number" NAME="4" VALUE="  4  " onclick="update(4)">
+              <INPUT TYPE="button" class="number" NAME="5" VALUE="  5  " onclick="update(5)">
+              <INPUT TYPE="button" class="number" NAME="6" VALUE="  6  " onclick="update(6)">
+              <INPUT TYPE="button" class="operator" NAME="-" VALUE="  -  " onclick="update('-')">
+              <!-- <br> -->
+              <INPUT TYPE="button" class="number" NAME="1" VALUE="  1  " onclick="update(1)">
+              <INPUT TYPE="button" class="number" NAME="2" VALUE="  2  " onclick="update(2)">
+              <INPUT TYPE="button" class="number" NAME="3" VALUE="  3  " onclick="update(3)">
+              <INPUT TYPE="button" class="operator" NAME="*" VALUE="  x  " onclick="update('*')">
+              <!-- <br> -->
+              <INPUT TYPE="button" class="empty" id="empty" NAME="9" VALUE="" onclick="update()">
+              <INPUT TYPE="button" class="number" NAME="0" VALUE="  0  " onclick="update(0)">
+              <INPUT TYPE="button" class="empty" id="empty" NAME="9" VALUE="" onclick="update()">
+              <INPUT TYPE="button" class="operator" NAME="/" VALUE="  /  " onclick="update('/')">
+            <!-- <br> -->
+              <INPUT TYPE="button" class="operator" NAME="%" VALUE="  %  " onclick="update('%')">
+              <INPUT TYPE="button" class="operator" NAME="c" VALUE="  c  " onclick="form_reset();">
+              <INPUT TYPE="button" class="operator" NAME="<" VALUE="  <  " onclick="back();">
+              <INPUT TYPE="button" class="operator" NAME="=" VALUE="  =  " onclick="result();">
+            </div>
+        </div>
+        </div>
+    </div>
+</form>
+    <script src="cal.js"></script>
+</body>
+</html>
